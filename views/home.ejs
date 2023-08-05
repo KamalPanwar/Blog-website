@@ -1,4 +1,10 @@
 <%- include('partials/header.ejs') %>
 <h1>Home</h1>
-<p><%= content %></p>
+
+<p><%= content %></p>  
+
+<% posts.map((e)=>{ %>
+    <h1><%= e.postTitle %></h1>
+    <p><%= e.postbody %></p>  
+    <% }) %>
 <%- include('partials/footer.ejs') %>
