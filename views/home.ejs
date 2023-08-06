@@ -5,6 +5,6 @@
 
 <% posts.map((e)=>{ %>
     <h1><%= e.postTitle %></h1>
-    <p><%= e.postbody %></p>  
+    <p><%= e.postbody.slice(0,100) %>...  <a href='/post/<%= e.postTitle %>'>Read more</a></p>  
     <% }) %>
 <%- include('partials/footer.ejs') %>
